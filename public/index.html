@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paid Downloads Simulator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Paid Downloads Simulator using x402</h1>
+        <p class="subtitle">Download resources via X402 payment.</p>
+      </header>
+
+      <section class="card">
+        <div id="file-list" class="file-list">Loading…</div>
+      </section>
+
+      <section class="card">
+        <h2>Status</h2>
+        <pre id="status" class="status">Ready.</pre>
+      </section>
+
+      <section class="card">
+        <h2>How it works</h2>
+        <ol>
+          <li>Click Download to request a paid file.</li>
+          <li>If payment is required, the server responds with HTTP 402.</li>
+          <li>Use the buyer client to complete payment, then retry.</li>
+        </ol>
+        <p class="hint">Tip: run the buyer client to complete the payment flow for now.</p>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
