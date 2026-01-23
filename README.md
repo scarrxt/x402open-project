@@ -82,7 +82,7 @@ When a request hits a protected route without payment proof, the server responds
 
 You can see the 402 response in DevTools → Network by watching the `/purchase/:id` request. A failed attempt will show 402 with the x402 payload. A successful run returns the file content.
 
-## Running the demo
+## Running the simulator
 
 1) Start the server.
 2) Open `http://localhost:4021/`.
