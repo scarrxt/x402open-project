@@ -1,6 +1,6 @@
-# x402-open paid download demo
+# x402-open paid download simulator
 
-This project is a full, working demo of a paid file/resource download service using the x402 protocol and x402-open. It includes:
+This project is a full, working simulator of a paid file/resource download service using the x402 protocol and x402-open. It includes:
 
 - A backend that hosts paid files and a facilitator node (Base Sepolia).
 - A one-click frontend that triggers payment and downloads the file.
@@ -98,10 +98,10 @@ Add PDFs to [files](files) and register them in the `FILES` map in [server.js](s
 
 - `Address "undefined" is invalid`: `.env` is missing `PRIVATE_KEY` or `RECEIVER_WALLET`.
 - `insufficient_funds`: wallet does not have enough Base Sepolia ETH/USDC.
-- Still getting 402 in the UI: the frontend uses `/purchase/:id` which pays server-side; verify `.env` and restart the server.# x402-open minimal demo
+- Still getting 402 in the UI: the frontend uses `/purchase/:id` which pays server-side; verify `.env` and restart the server.# x402-open simulator
 
-This is a minimal local demo that:
-- Runs a facilitator node (EVM/Base Sepolia).
+This is a simulator that:
+- Runs a facilitator node (Base Sepolia).
 - Protects `GET /weather` and a paid PDF download with x402 payment middleware.
 
 ## Setup
